@@ -74,3 +74,82 @@ header{
 #links_footer a{
     border-bottom: 1px solid var(--color-purple);
 }
+
+/* MODALS */
+
+.cards{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 130px;
+    text-align: center;
+}
+#starter p{
+    color: rgb(113, 89, 193)
+}
+#launchbase p{
+    color: rgb(235, 145, 29)
+}
+#gostack p{
+    color: rgb(9, 223, 62)
+}
+section p{
+    margin-top: 5px;
+    line-height: 24px;
+}
+
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal.max{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.modal .close-modal{
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal .maximize{
+    color: black;
+    position: absolute;
+    right: 40px;
+    top: 8px;
+    cursor: pointer;
+}
+
+iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 4%;
+}
